@@ -1,5 +1,4 @@
 "use client";
-import { Fascinate } from "next/font/google";
 import { useState } from "react";
 
 export default function RegisFormPage() {
@@ -94,7 +93,7 @@ export default function RegisFormPage() {
       setGenderError(true);
     }
 
-    if (fnameOk) {
+    if (fnameOk && lnameOK && planOK && genderOK) {
       alert(
         `Registration complete. Please pay money for ${computeTotalPayment().toLocaleString()} THB.`
       );
